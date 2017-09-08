@@ -1,7 +1,8 @@
 package com.algaworks.brewer.config.init;
 
-import com.algaworks.brewer.config.WebConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
+import com.algaworks.brewer.config.WebConfig;
 
 public class AppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
@@ -19,5 +20,4 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
     protected String[] getServletMappings() {
         return new String[] { "/" };
     }
-
 }
