@@ -26,7 +26,7 @@
         <servlet.version>3.1.0</servlet.version>
 
         <!-- Thymeleaf -->
-        <thymeleaf.version>3.0.0.RELEASE</thymeleaf.version>
+        <thymeleaf.version>3.0.7.RELEASE</thymeleaf.version>
 
         <!-- Bean Validation / Hibernate Validator -->
         <hibernate-validator.version>5.2.4.Final</hibernate-validator.version>
