@@ -1,5 +1,6 @@
 package com.algaworks.brewer.config;
 
+import com.algaworks.brewer.controller.CervejasController;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
@@ -16,10 +17,6 @@ import org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring4.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
 import org.thymeleaf.templateresolver.ITemplateResolver;
-
-import com.algaworks.brewer.controller.CervejasController;
-
-import nz.net.ultraq.thymeleaf.LayoutDialect;
 
 @Configuration
 @ComponentScan(basePackageClasses = { CervejasController.class })
@@ -46,8 +43,6 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
         SpringTemplateEngine engine = new SpringTemplateEngine();
         engine.setEnableSpringELCompiler(true);
         engine.setTemplateResolver(templateResolver());
-
-        engine.addDialect(new LayoutDialect());
         return engine;
     }
 
