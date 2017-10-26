@@ -56,5 +56,4 @@ public class JPAConfig {
 		transactionManager.setEntityManagerFactory(entityManagerFactory);
 		return transactionManager;
 	}
-
 }
