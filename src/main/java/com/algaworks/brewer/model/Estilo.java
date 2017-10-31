@@ -1,5 +1,7 @@
 package com.algaworks.brewer.model;
 
+import org.hibernate.validator.constraints.NotBlank;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -20,6 +22,7 @@ public class Estilo implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long codigo;
 
+	@NotBlank(message = "Nome não pode ser vazio.")
 	private String nome;
 
 	@OneToMany(mappedBy = "estilo")
