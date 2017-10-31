@@ -22,7 +22,7 @@ public class Estilo implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long codigo;
 
-	@NotBlank(message = "Nome não pode ser vazio.")
+	@NotBlank(message = "Nome é obrigatório.")
 	private String nome;
 
 	@OneToMany(mappedBy = "estilo")
