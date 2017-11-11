@@ -34,7 +34,7 @@
         <hibernate-validator.version>5.2.4.Final</hibernate-validator.version>
 
         <!-- Thymeleaf - Layout Dialect -->
-        <thymeleaf-layout-dialect.version>2.0.0-SNAPSHOT</thymeleaf-layout-dialect.version>
+        <thymeleaf-layout-dialect.version>2.2.2</thymeleaf-layout-dialect.version>
 
         <!-- Logging -->
         <log4j.version>2.6</log4j.version>
@@ -45,6 +45,9 @@
 
         <!-- Spring Data JPA -->
         <spring-data-jpa.version>1.10.2.RELEASE</spring-data-jpa.version>
+
+        <!-- Jackson - JSON -->
+        <jackson-core.version>2.7.5</jackson-core.version>
     </properties>
 
     <build>
@@ -185,10 +188,13 @@
             <artifactId>spring-data-jpa</artifactId>
             <version>${spring-data-jpa.version}</version>
         </dependency>
+
+        <!-- Jackson - JSON -->
         <dependency>
-            <groupId>nz.net.ultraq.thymeleaf</groupId>
-            <artifactId>thymeleaf-layout-dialect</artifactId>
-            <version>2.2.2</version>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson-core.version}</version>
+            <scope>compile</scope>
         </dependency>
 
     </dependencies>
